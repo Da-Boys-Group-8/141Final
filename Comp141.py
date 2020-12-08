@@ -27,7 +27,6 @@ print("This is the non template strand : " + dnaRep() + "\n" + "This function ma
     
 def dnaTranscription():
     mRNA = ""
-    x = 0
     for x in randomStrand:
         if x == 'A':
             mRNA += 'U'
