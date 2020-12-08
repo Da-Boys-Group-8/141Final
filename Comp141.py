@@ -12,7 +12,7 @@ def randStr(length):
     return "".join(tempList)
    
 randomStrand = randStr(length)
-print(randomStrand)
+print("This is the random DNA strand : " + randomStrand + "\n" + "This function randomly produces a DNA strand depending on the length inputed by the user.")
     
     #next entry
 def dnaRep():
@@ -23,7 +23,7 @@ def dnaRep():
                 nontempStrand += value
     return nontempStrand
 
-print(dnaRep())
+print("This is the non template strand : " + dnaRep() + "\n" + "This function matches the nucleotides on the random strand with the appropriate complementary DNA nucleotides.")
     
 def dnaTranscription():
     mRNA = ""
@@ -36,7 +36,7 @@ def dnaTranscription():
                 if x == key:
                     mRNA += value
     return mRNA
-print(dnaTranscription())
+print("This is the mRNA Strand : " + dnaTranscription() + "\n" + "This function matches the nucleotides on the random strand with the appropriate RNA nucleotides.")
     
     
 
