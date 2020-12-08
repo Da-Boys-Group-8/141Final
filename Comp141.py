@@ -23,3 +23,16 @@ def dnaRep():
                 nontempStrand += value
     return nontempStrand
 print(dnaRep())
+
+def dnaTranscription():
+    mRNA = ""
+    x = 0
+    for x in randomStrand:
+        if x == 'A':
+            mRNA += 'U'
+        else:
+            for key, value in nucleotides.items():
+                if x == key:
+                    mRNA += value
+    return mRNA
+print(dnaTranscription)
